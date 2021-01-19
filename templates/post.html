@@ -6,7 +6,8 @@
 {% endblock %}
 {% block content %}
 <p style='font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;'>
-    {{ post.body }}
+    {{ post.body | safe}}
+    <!--加入safe可以使post解析html格式-->
 </p>
 {% endblock %}
 
